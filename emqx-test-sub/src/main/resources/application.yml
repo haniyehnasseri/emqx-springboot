@@ -1,0 +1,20 @@
+mqtt:
+  client-id: testclientsub
+  default-topic: testtopic
+  default-qos: 0
+  default-retained: true
+  connection:
+    options:
+      server-uri: tcp://127.0.0.1:11883
+      #            server-uri: ws://localhost:8083
+      username: admin
+      password: public
+      keepAliveInterval: 60
+      maxInFlight: 10
+      connectionTimeout: 30
+      maxReconnectDelay: 128000
+      executorServiceTimeout: 1
+      cleanSession: true
+      automaticReconnect: true
+server:
+  port: 8092
